@@ -1,0 +1,224 @@
+* {
+    margin: 0; /* Menghapus margin default semua elemen */
+    padding: 0; /* Menghapus padding default semua elemen */
+    box-sizing: border-box; /* Agar padding & border masuk dalam perhitungan ukuran */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    list-style: none; /* Menghilangkan bullet pada list */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font default */
+}
+
+html { 
+    scroll-behavior: smooth; /* Membuat scroll antar section jadi halus */
+}
+
+body {
+    background-color: #0b132b; /* Warna background utama (biru gelap) */
+    color: #ffffff; /* Warna teks utama putih */
+}
+
+/* Navbar */
+.navbar {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Jarak antar elemen kiri-kanan */
+    align-items: center; /* Rata tengah vertikal */
+    padding: 20px 7%; /* Padding atas-bawah 20px, kiri-kanan 7% */
+    background-color: rgba(11, 19, 43, 0.95); /* Background transparan */
+    border-bottom: 1px solid #3a506b; /* Garis bawah navbar */
+    position: fixed; /* Navbar tetap di atas saat scroll */
+    top: 0; left: 0; right: 0; /* Posisi menempel di atas */
+    z-index: 999; /* Agar navbar selalu di atas elemen lain */
+}
+
+.navbar-logo { 
+    font-size: 2rem; /* Ukuran teks logo */
+    font-weight: bold; /* Tebal */
+    color: #fff; /* Warna putih */
+}
+
+.navbar-logo span { 
+    color: #5bc0be; /* Warna highlight pada teks "App" */
+}
+
+.navbar-nav a { 
+    color: #fff; /* Warna link */
+    margin: 0 15px; /* Jarak antar link */
+    font-size: 1.1rem; /* Ukuran teks */
+    transition: 0.3s; /* Animasi halus saat hover */
+}
+
+.navbar-nav a:hover { 
+    color: #5bc0be; /* Warna berubah saat hover */
+}
+
+/* Hero Section (Awal) */
+.hero {
+    min-height: 100vh; /* Tinggi minimal 1 layar penuh */
+    display: flex; /* Flexbox */
+    align-items: center; /* Tengah vertikal */
+    justify-content: center; /* Tengah horizontal */
+    text-align: center; /* Teks rata tengah */
+    padding: 0 7%; /* Padding kiri-kanan */
+    background: linear-gradient(rgba(11, 19, 43, 0.8), rgba(11, 19, 43, 0.8)), 
+                url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200'); /* Background + overlay */
+    background-size: cover; /* Gambar menutupi area */
+    background-position: center; /* Posisi gambar di tengah */
+}
+
+.hero h1 { 
+    font-size: 4rem; /* Ukuran judul besar */
+    margin-bottom: 15px; /* Jarak bawah */
+}
+
+.hero h1 span { 
+    color: #5bc0be; /* Highlight teks */
+}
+
+.hero p { 
+    font-size: 1.2rem; /* Ukuran teks deskripsi */
+    margin-bottom: 30px; /* Jarak bawah */
+    max-width: 600px; /* Lebar maksimal teks */
+    margin-left: auto; margin-right: auto; /* Tengah horizontal */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* Tombol Besar di Tengah */
+.cta-besar {
+    display: inline-block; /* Agar bisa diberi padding */
+    padding: 15px 40px; /* Ukuran tombol */
+    font-size: 1.5rem; /* Ukuran teks */
+    font-weight: bold; /* Tebal */
+    color: #0b132b; /* Warna teks */
+    background-color: #5bc0be; /* Warna tombol */
+    border-radius: 8px; /* Sudut melengkung */
+    transition: 0.3s; /* Animasi */
+}
+
+.cta-besar:hover { 
+    background-color: #3a506b; /* Warna berubah saat hover */
+    color: #fff; /* Teks jadi putih */
+}
+
+/* Section Global (Download, About, Contact) */
+.download-section, .about, .contact { 
+    padding: 100px 7% 50px; /* Spasi atas besar, bawah lebih kecil */
+    text-align: center; /* Teks rata tengah */
+}
+
+h2 { 
+    font-size: 2.5rem; /* Ukuran judul */
+    margin-bottom: 30px; /* Jarak bawah */
+    border-bottom: 2px solid #3a506b; /* Garis bawah */
+    display: inline-block; /* Agar border hanya sepanjang teks */
+    padding-bottom: 10px; /* Jarak teks ke garis */
+}
+
+h2 span { 
+    color: #5bc0be; /* Highlight teks */
+}
+
+/* Download Area */
+.platform-options { 
+    background-color: #1c2541; /* Background box */
+    padding: 30px; /* Jarak dalam */
+    border-radius: 10px; /* Sudut melengkung */
+    margin-top: 20px; /* Jarak atas */
+    border: 1px solid #3a506b; /* Border */
+}
+
+.platform-options p { 
+    font-size: 1.2rem; /* Ukuran teks */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+.btn-download {
+    background-color: #5bc0be; /* Warna tombol */
+    color: #0b132b; /* Warna teks */
+    font-size: 1.2rem; /* Ukuran teks */
+    font-weight: bold; /* Tebal */
+    padding: 12px 30px; /* Ukuran tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Cursor jadi tangan */
+    transition: 0.3s; /* Animasi */
+}
+
+.btn-download:hover { 
+    background-color: #fff; /* Warna berubah saat hover */
+}
+
+/* About Section */
+.about .row { 
+    display: flex; /* Flexbox */
+    align-items: center; /* Tengah vertikal */
+    gap: 30px; /* Jarak antar elemen */
+    text-align: left; /* Teks rata kiri */
+    flex-wrap: wrap; /* Agar responsif */
+}
+
+.about-img { 
+    flex: 1; /* Lebar fleksibel */
+}
+
+.about-img img { 
+    width: 100%; /* Lebar penuh */
+    border-radius: 10px; /* Sudut melengkung */
+    border: 2px solid #5bc0be; /* Border */
+}
+
+.about .content { 
+    flex: 1; /* Lebar fleksibel */
+}
+
+.about .content h3 { 
+    font-size: 1.8rem; /* Ukuran subjudul */
+    margin-bottom: 15px; /* Jarak bawah */
+    color: #5bc0be; /* Warna teks */
+}
+
+.about .content p { 
+    font-size: 1.1rem; /* Ukuran teks */
+    line-height: 1.6; /* Jarak baris */
+}
+
+/* Contact Section Sederhana */
+.contact-text { 
+    display: flex; /* Flexbox */
+    justify-content: center; /* Tengah horizontal */
+}
+
+.contact-info { 
+    background-color: #1c2541; /* Background box */
+    padding: 40px; /* Jarak dalam */
+    border-radius: 10px; /* Sudut melengkung */
+    text-align: center; /* Teks rata tengah */
+    border: 1px solid #3a506b; /* Border */
+    max-width: 600px; /* Lebar maksimal */
+    width: 100%; /* Responsif */
+}
+
+.contact-img { 
+    width: 100%; /* Lebar penuh */
+    height: 200px; /* Tinggi tetap */
+    object-fit: cover; /* Gambar menyesuaikan tanpa distorsi */
+    border-radius: 8px; /* Sudut melengkung */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+.contact-info h3 { 
+    margin-bottom: 20px; /* Jarak bawah */
+    color: #5bc0be; /* Warna teks */
+}
+
+.contact-info ul li { 
+    font-size: 1.2rem; /* Ukuran teks */
+    margin-bottom: 10px; /* Jarak antar item */
+}
+
+/* Footer */
+footer { 
+    text-align: center; /* Teks rata tengah */
+    padding: 20px; /* Jarak dalam */
+    background-color: #0b132b; /* Warna background */
+    border-top: 1px solid #3a506b; /* Garis atas */
+    margin-top: 40px; /* Jarak dari section atas */
+}

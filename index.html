@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Menentukan bahwa dokumen ini menggunakan HTML5 -->
+<html lang="id"> <!-- Elemen root HTML dengan bahasa Indonesia -->
+<head>
+    <meta charset="UTF-8"> <!-- Mengatur encoding karakter menjadi UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat tampilan responsif di perangkat mobile -->
+    <title>FinApp - Aplikasi Keuangan</title> <!-- Judul halaman di tab browser -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Menghubungkan file CSS eksternal -->
+</head>
+<body> <!-- Awal isi halaman -->
+
+    <nav class="navbar"> <!-- Navigasi utama -->
+        <a href="#" class="navbar-logo">Fin<span>App</span></a> <!-- Logo dengan efek span -->
+        <div class="navbar-nav"> <!-- Container menu navigasi -->
+            <a href="#home">Home</a> <!-- Link ke bagian Home -->
+            <a href="#download">Download</a> <!-- Link ke bagian Download -->
+            <a href="#about">Tentang Kami</a> <!-- Link ke bagian About -->
+            <a href="#contact">Kontak</a> <!-- Link ke bagian Contact -->
+        </div>
+    </nav>
+
+    <section class="hero" id="home"> <!-- Section hero (halaman utama) -->
+        <main class="content"> <!-- Konten utama hero -->
+            <h1>Catat Keuangan Jadi <span>Lebih Mudah</span></h1> <!-- Judul utama -->
+            
+            <p>Aplikasi pencatat keuangan cerdas yang membantu Anda melacak setiap pemasukan dan pengeluaran secara real-time, kapan pun dan di mana pun.</p> <!-- Deskripsi aplikasi -->
+            
+            <a href="#download" class="cta-besar">Mulai Sekarang</a> <!-- Tombol call-to-action -->
+        </main>
+    </section>
+
+    <section id="download" class="download-section"> <!-- Section download -->
+        <h2><span>Download</span> Aplikasi</h2> <!-- Judul section -->
+        <p>Pilih platform perangkat Anda untuk mulai mengunduh.</p> <!-- Deskripsi -->
+        
+        <div class="platform-options"> <!-- Opsi platform -->
+            <p><strong>Tersedia untuk:</strong> Mobile (Android), iOS, dan PC (Windows/Mac).</p> <!-- Info platform -->
+            
+            <button class="btn-download" onclick="mulaiDownload()">Download Aplikasi</button> <!-- Tombol dengan event klik -->
+        </div>
+    </section>
+
+    <section id="about" class="about"> <!-- Section tentang -->
+        <h2><span>Tentang</span> Kami</h2> <!-- Judul -->
+        <div class="row"> <!-- Container baris -->
+            <div class="about-img"> <!-- Container gambar -->
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600" alt="Tentang FinApp" /> <!-- Gambar ilustrasi -->
+            </div>
+            <div class="content"> <!-- Konten teks -->
+                <h3>Mitra Keuangan Anda</h3> <!-- Subjudul -->
+                <p>FinApp dirancang oleh para ahli finansial untuk memberikan kemudahan bagi masyarakat dalam mencapai kebebasan finansial melalui budgeting yang terstruktur.</p> <!-- Deskripsi -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact"> <!-- Section kontak -->
+        <h2><span>Kontak</span> Kami</h2> <!-- Judul -->
+        <div class="row contact-text"> <!-- Container teks kontak -->
+            <div class="contact-info"> <!-- Info kontak -->
+                <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?auto=format&fit=crop&w=600" alt="Customer Service" class="contact-img" /> <!-- Gambar CS -->
+                
+                <h3>Hubungi kami untuk bantuan lebih lanjut:</h3> <!-- Judul kecil -->
+                <ul> <!-- Daftar kontak -->
+                    <li><strong>Nomor:</strong> +62 815-5822-2606</li> <!-- Nomor telepon -->
+                    <li><strong>Instagram:</strong> @finapp_id</li> <!-- Instagram -->
+                    <li><strong>Facebook:</strong> FinApp Indonesia</li> <!-- Facebook -->
+                    <li><strong>Email:</strong> support@finapp.com</li> <!-- Email -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer> <!-- Footer halaman -->
+        <p>Created by Naufal | Exercise 1 PDW © 2026</p> <!-- Kredit pembuat -->
+    </footer>
+
+    <script> <!-- Script JavaScript -->
+        function mulaiDownload() { // Fungsi yang dipanggil saat tombol diklik
+            alert("File installer sedang disiapkan. Proses download akan segera dimulai!"); // Menampilkan popup alert
+        }
+    </script>
+</body>
+</html>
