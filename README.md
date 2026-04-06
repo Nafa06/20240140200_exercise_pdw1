@@ -1,1 +1,3 @@
+<h1 align="center">Website Keuangan FinApp</h1>
+
 Tema dari project ini adalah aplikasi keuangan digital yang berfokus pada kemudahan pengguna dalam mengelola pemasukan dan pengeluaran sehari-hari. Website ini mengusung konsep modern, simpel, dan profesional dengan tujuan membantu pengguna mencapai pengelolaan keuangan yang lebih terstruktur dan efisien. Dengan tampilan yang bersih dan fitur yang terarah, FinApp diposisikan sebagai solusi praktis bagi masyarakat untuk meningkatkan kesadaran finansial dan mencapai kestabilan keuangan secara lebih mudah.
